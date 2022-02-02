@@ -13,7 +13,7 @@ INSERT INTO `championship`(`name`, `logo`)
 VALUES 
   ('Ligue 1', 'https://seeklogo.com/images/L/ligue-1-uber-eats-logo-E440240623-seeklogo.com.png'),
   ('Ligue 2', 'https://www.footpack.fr/wp-content/uploads/2020/06/nouveau-logo-ligue-2-bkt-officiel-lfp.jpg'),
-  ('Premiére ligue', 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/1920px-Premier_League_Logo.svg.png'),
+  ('Premiére ligue', 'https://logodownload.org/wp-content/uploads/2016/03/premier-league-5.png'),
   ('La liga', 'https://content.sportslogos.net/logos/130/4163/full/7308_la_liga_-primary-2015.png'),
   ('Bundesliga', 'https://2.bp.blogspot.com/-v2hnTua9OXg/ULB7Lg9ZWHI/AAAAAAAAARs/hF7hktyDj64/s400/Bundesliga-Logo-2010.png');
 
