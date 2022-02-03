@@ -7,7 +7,7 @@ const findAllPlayers = () => db.query('SELECT * FROM footballplayer');
 const findOnePlayer = (id) => db.query('SELECT * FROM footballplayer WHERE id = ?', [id]);
 
 const postPlayers = (
-    firstname,
+  { firstname,
     lastname,
     age,
     img,
@@ -15,10 +15,10 @@ const postPlayers = (
     weight,
     number,
     post,
-    clubId,
+    clubId,}
   ) => {
-    db.query(
-      'INSERT INTO footballplayer (`firstname`, `lastname`, `age`, `img`, `height`, `weight`, `number`, `post`, `clubId`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+   return  db.query(
+      'INSERT INTO footballplayer (firstname, lastname, age, img, height, weight, number, post, clubId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
       [
         firstname,
         lastname,

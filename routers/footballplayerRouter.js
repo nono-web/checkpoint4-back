@@ -13,11 +13,12 @@ const {
     firstname: Joi.string().max(100).required(),
     lastname: Joi.string().max(100).required(),
     age: Joi.string().max(200).required(),
-    img: Joi.string().max(355),
+    img: Joi.string().max(355).required(),
     height: Joi.number().required(),
     weight: Joi.number().required(),
     number: Joi.string().required(),
     post: Joi.string().required(),
+    clubId: Joi.number(),
   });
   
   const playerUpdate = Joi.object({
@@ -60,20 +61,22 @@ footballplayerRouter.get('/:id', async (req, res) => {
   });
 
 footballplayerRouter.post('/', async (req, res) => {
-    const { error, value: validPlayer } = playerValidation().validate(req.body);
-  
+    const { error, value: validPlayer } = playerValidation.validate(req.body);
+  console.log(validPlayer);
     if (error) {
       return res.status(422).json({ message: 'Invalid data', error });
     }
   
     try {
       const [result] = await postPlayers(validPlayer);
+      console.log(result);
       return res.status(201).json({ id: result.insertId, ...validPlayer });
     } catch (err) {
       console.error(err);
       return res.status(500).json({ message: 'Error saving the player' });
     }
   });
+
 
 footballplayerRouter.put('/:id', async (req, res) => {
     const { error, value: validPlayer } = playerUpdate.validate(req.body);
