@@ -5,6 +5,7 @@ const {
     findOneChampionship,
   } = require('../models/championshipModel');
 
+
   championshipRouter.get('/', async (req, res) => {
     try {
       const [result] = await findAllChampionships(req.query);
@@ -32,6 +33,7 @@ const {
       return res.status(500).send(`An error occurred: ${err.message}`);
     }
   });
+
 
   module.exports = championshipRouter;
   

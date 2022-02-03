@@ -27,13 +27,13 @@ CREATE TABLE `club` (
 
 INSERT INTO `club`(`name`, `crest`, `championshipId`) 
 VALUES 
-  ('Angers', 'https://cdn.freelogovectors.net/wp-content/uploads/2020/08/angers-logo-768x768.png', 1),
+  ('Angers', 'https://www.footpack.fr/wp-content/uploads/2021/05/logo-angers-sco-868x1024.jpg', 1),
   ('Bordeaux', 'https://logodownload.org/wp-content/uploads/2019/09/fc-bordeaux-logo-0.png', 1),
-  ('Brest', 'https://apps-cloud.n-tv.de/img/1973241-1290239234000/4-3/320/logo-brest.jpg', 1),
+  ('Brest', 'https://upload.wikimedia.org/wikipedia/fr/thumb/1/14/Logo_Stade_Brestois.svg/langfr-800px-Logo_Stade_Brestois.svg.png', 1),
   ('Clermont', 'https://www.stickers-folies.fr/ar-stickers-clermont-foot-63-15799.jpg', 1),
   ('Lens', 'https://www.color-stickers.com/2162-large_default/stickers-logo-foot-racing-club-de-lens.jpg', 1),
   ('Lille', 'https://www.logofootball.net/wp-content/uploads/Lille-OSC-HD-Logo.png', 1),
-  ('Lorient', 'https://2.bp.blogspot.com/-iNpKRaby0SQ/U_Xe5OCOKVI/AAAAAAAADmY/HASua6tlFeY/s1600/Logo%2BFC%2BLorient.png', 1),
+  ('Lorient', 'https://4.bp.blogspot.com/-LE_rb-ZMxUE/UMNxpbJMpSI/AAAAAAAAF0s/mR-5z_F_Xcg/s200/420px-FC_Lorient_logo.svg.png', 1),
   ('Lyon', 'https://www.logofootball.net/wp-content/uploads/Olympique-Lyonnais-HD-Logo.png', 1),
   ('Marseille', 'https://www.logofootball.net/wp-content/uploads/Olympique-Marseille-HD-Logo.png', 1),
   ('Metz', 'https://logodownload.org/wp-content/uploads/2019/09/fc-metz-logo-0.png', 1),
