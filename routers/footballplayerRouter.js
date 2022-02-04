@@ -62,7 +62,6 @@ footballplayerRouter.get('/:id', async (req, res) => {
 
 footballplayerRouter.post('/', async (req, res) => {
     const { error, value: validPlayer } = playerValidation.validate(req.body);
-  console.log(validPlayer);
     if (error) {
       return res.status(422).json({ message: 'Invalid data', error });
     }
