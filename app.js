@@ -3,7 +3,7 @@ const express = require('express');
 const connection = require('./db-config');
 require('dotenv').config();
 
-connection.connect((err) => {
+connection.getConnection((err) => {
   if (err) {
     console.error(`error connecting: ${err.stack}`);
   } else {

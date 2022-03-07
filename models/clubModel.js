@@ -1,6 +1,7 @@
+const pool = require('../db-config');
 const connection = require('../db-config');
 
-const db = connection.promise();
+const db = pool.promise();
 
 const findAllClubs = () => db.query('SELECT * FROM club');
 
